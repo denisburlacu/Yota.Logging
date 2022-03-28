@@ -10,7 +10,6 @@
         <RootNamespace>Yota.Logging</RootNamespace>
         <Authors>Denis Burlacu</Authors>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
-        <PackageLicenseFile>../../LICENSE.txt</PackageLicenseFile>
     </PropertyGroup>
 
     <PropertyGroup>
