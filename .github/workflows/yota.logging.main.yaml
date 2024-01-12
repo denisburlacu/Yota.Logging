@@ -1,0 +1,32 @@
+name: Yota Caching Nuget Push 
+
+on:
+  workflow_run:
+    workflows: ["Build & Test"]
+    branches: [ main ]
+    types:
+      - completed
+
+jobs:
+  publish-nuget:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 8.0.0
+
+    - name: Install dependencies
+      run: dotnet restore
+    - name: Build
+      run: dotnet build --configuration Release --no-restore
+    - name: Build solution and generate NuGet package
+      run: |
+        for project in $(find . -name '*.csproj' ! -name '*Test*'); do
+          dotnet pack "$project" -o ./out
+        done
+        
+    - name: Push generated package to GitHub registry
+      run: dotnet nuget push ./out/*.nupkg --skip-duplicate --no-symbols true
