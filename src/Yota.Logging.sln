@@ -4,6 +4,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yota.Logging", "Yota.Loggin
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{EADEF2D2-F0F7-4FE6-BB66-92A885AF9190}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "examples", "examples", "{85F6CF3B-2D68-4495-805E-0019CC50F837}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yota.Logging.Test", "..\examples\Yota.Logging.Test\Yota.Logging.Test.csproj", "{14430394-6331-486B-B94D-773953B9652E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -14,8 +18,13 @@ Global
 		{4DD41228-E6B4-48DC-BE3D-65C10243B419}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4DD41228-E6B4-48DC-BE3D-65C10243B419}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4DD41228-E6B4-48DC-BE3D-65C10243B419}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14430394-6331-486B-B94D-773953B9652E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14430394-6331-486B-B94D-773953B9652E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14430394-6331-486B-B94D-773953B9652E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14430394-6331-486B-B94D-773953B9652E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{4DD41228-E6B4-48DC-BE3D-65C10243B419} = {EADEF2D2-F0F7-4FE6-BB66-92A885AF9190}
+		{14430394-6331-486B-B94D-773953B9652E} = {85F6CF3B-2D68-4495-805E-0019CC50F837}
 	EndGlobalSection
 EndGlobal
