@@ -2,9 +2,9 @@ name: Yota Caching Nuget Push
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "main" ]
 
 jobs:
   publish-nuget:
