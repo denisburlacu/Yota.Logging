@@ -15,7 +15,7 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: 6.0.x
+        dotnet-version: 8.0.x
 
     - name: Install dependencies
       run: dotnet restore "src/Yota.Logging.sln"
@@ -28,4 +28,4 @@ jobs:
         done
         
     - name: Push generated package to GitHub registry
-      run: dotnet nuget push ./out/*.nupkg --skip-duplicate --no-symbols true
+      run: dotnet nuget push ./src/out/*.nupkg --skip-duplicate --no-symbols true
